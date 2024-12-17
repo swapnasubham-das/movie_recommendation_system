@@ -3,7 +3,8 @@ import pickle
 import pandas as pd
 import requests
 
-st.title('Movie Recommender System')
+st.set_page_config(page_title="Movie Recommendation")
+st.header('SS Das Movie Recommender System')
 
 def fetch_movie_poster(movie_id):
     response = requests.get('https://api.themoviedb.org/3/movie/{}?api_key=682a6bc426d0dae62f009dad39f47954'.format(movie_id))
